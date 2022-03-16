@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1f1f24"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="240dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/logonirwana"
+        android:layout_marginBottom="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hi!"
+        android:typeface="normal"
+        android:textStyle="bold"
+        android:textSize="27sp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="50dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create a new account."
+        android:typeface="normal"
+        android:textSize="19sp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="50dp"/>
+
+    <EditText
+        android:id="@+id/txUsername"
+        android:hint="Username"
+        android:textColorHint="@color/white"
+        android:layout_marginLeft="50dp"
+        android:drawableStart="@drawable/ic_baseline_person_24"
+        android:drawablePadding="25dp"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/txEmail"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="50dp"
+        android:drawableStart="@drawable/ic_baseline_email_24"
+        android:drawablePadding="25dp"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/txPassword"
+        android:hint="Password"
+        android:textColorHint="@color/white"
+        android:inputType="textPassword"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="50dp"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="25dp"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="50dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button"
+        android:text="Sign Up"
+        android:textColor="@color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Already have an account?"
+            android:textSize="15sp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="80dp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <RelativeLayout
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="Sign In"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="80dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>
